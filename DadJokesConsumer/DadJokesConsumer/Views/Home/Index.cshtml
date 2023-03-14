@@ -1,0 +1,12 @@
+﻿@model DadJokeBody
+
+
+@{
+    ViewData["Title"] = "Joke from Dad Jokes API";
+}
+<div>
+    <h3>@Model.setup</h3>
+    <h3>@Model.punchline</h3>
+</div>
+
+<input type="button" value="NextJoke" onclick="location.href='@Url.Action("Index", "Home")'" />
